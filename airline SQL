@@ -1,0 +1,13 @@
+CREATE TABLE `reservations` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `trip_type` enum('one_way','return') DEFAULT NULL,
+  `departure_date` date DEFAULT NULL,
+  `return_date` date DEFAULT NULL,
+  `num_travelers` int DEFAULT NULL,
+  `total_amount` decimal(10,2) DEFAULT NULL,
+  `first_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) DEFAULT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `payment_card_number` varchar(16) DEFAULT NULL,
+  `reservation_status` enum('success','pending','failed') DEFAULT NULL,
+  PRIMARY KEY (`id`)
