@@ -10,3 +10,8 @@ conn = mysql.connector.connect(
     database="smj_airline_reservation"
 )
 cursor = conn.cursor()
+# Function to read reservations
+def read_reservations():
+    cursor.execute("SELECT * FROM reservations")
+    result = cursor.fetchall()
+    return result
