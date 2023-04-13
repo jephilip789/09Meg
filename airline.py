@@ -33,3 +33,9 @@ def create_reservation():
         messagebox.showinfo("Success", "Reservation created successfully!")
     except Exception as e:
         messagebox.showerror("Error", str(e))
+
+        # Function to read reservations
+        def read_reservations()
+            cursor.execute("SELECT * FROM reservations")
+            result = cursor.fetchall()
+            return result
