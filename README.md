@@ -4,3 +4,4 @@ Online booking for airline tickets has been made possible through the SMJ Airlin
 (Source: Acquired from MySQL Workbench)
 The above code is showing the creation of the database which has been implemented in the MySQL Workbench. This is the very first step of the project first the database needs to create and the table and the rest of the GUI need to be implemented later.
 
+student name - Jerome
