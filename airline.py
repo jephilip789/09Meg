@@ -23,3 +23,13 @@ def create_reservation():
     payment_card_number = card_entry.get()
     reservation_status = "success"
     try:
+        sql = "INSERT INTO reservations (trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name, date_of_birth, payment_card_number, reservation_status) " \
+              "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        values = (
+        trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name, date_of_birth,
+        payment_card_number, reservation_status)
+        cursor.execute(sql, values)
+        conn.commit()
+        messagebox.showinfo("Success", "Reservation created successfully!")
+    except Exception as e:
+        messagebox.showerror("Error", str(e))
