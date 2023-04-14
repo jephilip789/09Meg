@@ -89,5 +89,47 @@ def create_reservation():
                             else:
                                 display_text.delete("1.0", END)
                                 display_text.insert(END, "No reservations found.")
+                                # Create GUI window
+                                root = Tk()
+                                root.title("Airline Reservation System")
+
+                                # Create labels
+                                trip_label = Label(root, text="Trip Type:")
+                                departure_label = Label(root, text="Departure Date:")
+                                return_label = Label(root, text="Return Date:")
+                                num_travelers_label = Label(root, text="Number of Travelers:")
+                                first_name_label = Label(root, text="First Name:")
+                                last_name_label = Label(root, text="Last Name:")
+                                dob_label = Label(root, text="Date of Birth:")
+                                card_label = Label(root, text="Payment Card Number:")
+                                delete_id_label = Label(root, text="Reservation ID for Deletion:")
+                                update_id_label = Label(root, text="Reservation ID for Update:")
+
+                                # Create entry fields
+                                trip_var = StringVar()
+                                trip_combobox = Combobox(root, textvariable=trip_var, values=["one_way", "round_trip"])
+                                departure_var = StringVar()
+                                departure_entry = Entry(root, textvariable=departure_var)
+                                return_var = StringVar()
+                                return_entry = Entry(root, textvariable=return_var)
+                                num_travelers_var = IntVar()
+                                num_travelers_entry = Entry(root, textvariable=num_travelers_var)
+                                first_name_entry = Entry(root)
+                                last_name_entry = Entry(root)
+                                dob_entry = Entry(root)
+                                card_entry = Entry(root)
+                                delete_id_var = IntVar()
+                                delete_id_entry = Entry(root, textvariable=delete_id_var)
+                                update_id_var = IntVar()
+                                update_id_entry = Entry(root, textvariable=update_id_var)
+
+                                # Create buttons
+                                create_button = Button(root, text="Create Reservation", command=create_reservation)
+                                read_button = Button(root, text="Display Reservations", command=display_reservations)
+                                delete_button = Button(root, text="Delete Reservation", command=delete_reservation)
+                                update_button = Button(root, text="Update Reservation", command=update_reservation)
+
+                                # Create text box to display reservations
+                                display_text = Text(root, height=10, width=100)
 
 
