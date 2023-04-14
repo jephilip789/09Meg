@@ -76,4 +76,18 @@ def create_reservation():
                     except Exception as e:
                         messagebox.showerror("Error", str(e))
 
+                        # Function to display reservations in a table
+                        def display_reservations():
+                            result = read_reservations()
+                            if result:
+                                display_text.delete("1.0", END)
+                                display_text.insert(END,
+                                                    "ID\tTrip Type\tDeparture Date\tReturn Date\tNum Travelers\tTotal Amount\tFirst Name\tLast Name\tDate of Birth\tPayment Card Number\tReservation Status\n")
+                                for row in result:
+                                    display_text.insert(END,
+                                                        f"{row[0]}\t{row[1]}\t{row[2]}\t{row[3]}\t{row[4]}\t{row[5]}\t{row[6]}\t{row[7]}\t{row[8]}\t{row[9]}\t{row[10]}\n")
+                            else:
+                                display_text.delete("1.0", END)
+                                display_text.insert(END, "No reservations found.")
+
 
