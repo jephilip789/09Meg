@@ -52,3 +52,9 @@ def create_reservation():
             except Exception as e
                 messagebox.showerror("Error", str(e))
 
+                # Function to update a reservation
+                def update_reservation():
+                    reservation_id = update_id_var.get()
+                    trip_type = trip_var.get()
+                    departure_date = departure_var.get()
+
