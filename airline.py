@@ -190,9 +190,3 @@ def create_reservation():
                                 display_text.grid(row=14, column=0, columnspan=2)
 
                                 root.mainloop()
-
-
-
-
-
-
