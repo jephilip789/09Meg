@@ -131,5 +131,34 @@ def create_reservation():
 
                                 # Create text box to display reservations
                                 display_text = Text(root, height=10, width=100)
+                                # Grid layout for GUI elements
+                                trip_label.grid(row=0, column=0, sticky=W)
+                                trip_combobox.grid(row=0, column=1)
+                                departure_label.grid(row=1, column=0
+                                sticky = W)
+                                departure_entry.grid(row=1, column=1
+                                return_label.grid(row=2, column=0, sticky=W)
+                                return_entry.grid(row=2, column=1)
+                                num_travelers_label.grid(row=3, column=0, sticky=W)
+                                num_travelers_entry.grid(row=3, column=1)
+                                first_name_label.grid(row=4, column=0, sticky=W)
+                                first_name_entry.grid(row=4, column=1)
+                                last_name_label.grid(row=5, column=0, sticky=W
+                                last_name_entry.grid(row=5, column=1)
+                                dob_label.grid(row=6, column=0, sticky=W)
+                                dob_entry.grid(row=6, column=1)
+                                card_label.grid(row=7, column=0, sticky=W)
+                                card_entry.grid(row=7, column=1)
+                                create_button.grid(row=8, column=0, columnspan=2)
+                                delete_id_label.grid(row=9, column=0, sticky=W)
+                                delete_id_entry.grid(row=9, column=1
+                                delete_button.grid(row=10, column=0, columnspan=2
+                                update_id_label.grid(row=11, column=0, sticky=W)
+                                update_id_entry.grid(row=11, column=1)
+                                update_button.grid(row=12, column=0, columnspan=2)
+                                read_button.grid(row=13, column=0, columnspan=2)
+                                display_text.grid(row=14, column=0, columnspan=2
+
+                                root.mainloop()
 
 
