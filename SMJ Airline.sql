@@ -25,3 +25,15 @@ CREATE TABLE `reservations` (
   PRIMARY KEY (`id`
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `reservations`
+--
+
+LOCK TABLES `reservations` WRITE;
+/*!40000 ALTER TABLE `reservations` DISABLE KEYS */;
+INSERT INTO `reservations` VALUES (1,'one_way','2023-04-10',NULL,2,200.00,'John','Doe','1990-01-01','1234567890123456','success'),(4,'one_way','2023-04-10',NULL,2,200.00,'John','Doe','1990-01-01','1234567890123456','success'),(5,'one_way','2023-04-10',NULL,2,200.00,'John','Doe','1990-01-01','1234567890123456','success'),(6,'one_way','2023-04-10',NULL,2,200.00,'John','Doe','1990-01-01','1234567890123456','success'),(7,'one_way','2023-04-23','2023-04-29',2,200.00,'Alan','Walker','1998-04-11','1234567890123456','success'),(8,'one_way','2023-04-23','2023-04-29',2,200.00,'Alan','Walker','1998-04-11','1234567890123456','success'),(9,'one_way','2023-04-10',NULL,2,200.00,'John','Doe','1990-01-01','1234567890123456','success');
+/*!40000 ALTER TABLE `reservations` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
