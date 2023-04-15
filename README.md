@@ -31,7 +31,36 @@ conn = mysql.connector.connect(
 )
 cursor = conn.cursor()
 
-The figure is a code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). A cursor object is created to interact with the database. Proper exception handling and closing of the database connection are important for secure and efficient database operations.
+The  code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). A cursor object is created to interact with the database. Proper exception handling and closing of the database connection are important for secure and efficient database operations.
+
+def create_reservation():
+    trip_type = trip_var.get()
+    departure_date = departure_var.get()
+    return_date = return_var.get()
+    num_travelers = num_travelers_var.get()
+    total_amount = 200.00 if trip_type == "one_way" else 300.00
+    first_name = first_name_entry.get()
+    last_name = last_name_entry.get()
+    date_of_birth = dob_entry.get()
+    payment_card_number = card_entry.get()
+    reservation_status = "success"
+    try:
+        sql = "INSERT INTO reservations (trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name, date_of_birth, payment_card_number, reservation_status) " \
+              "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        values = (
+        trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name, date_of_birth,
+        payment_card_number, reservation_status)
+        cursor.execute(sql, values)
+        conn.commit()
+        messagebox.showinfo("Success", "Reservation created successfully!")
+    except Exception as e:
+        messagebox.showerror("Error", str(e))
+
+
+
+
+The above code is a Python function that inserts reservation details into a MySQL database using MySQL Workbench. The function retrieves values from various Tkinter widgets (such as trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type. It then constructs an SQL query with placeholders for the values to be inserted into the reservations table. The function uses a try-except block to handle exceptions, such as errors during the SQL execution. If the insertion is successful, a message box displays a success message. If an error occurs, an error message box shows the error message. The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
+
 
 
 
