@@ -35,7 +35,7 @@ def create_reservation():
         messagebox.showerror("Error", str(e))
 
         # Function to read reservations
-        def read_reservations()
+        def read_reservations():
             cursor.execute("SELECT * FROM reservations")
             result = cursor.fetchall()
             return result
@@ -49,7 +49,7 @@ def create_reservation():
                 cursor.execute(sql, values)
                 conn.commit(
                 messagebox.showinfo("Success", "Reservation deleted successfully!")
-            except Exception as e
+            except Exception as e:
                 messagebox.showerror("Error", str(e))
 
                 # Function to update a reservation
