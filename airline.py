@@ -53,28 +53,27 @@ def delete_reservation():
         messagebox.showerror("Error", str(e))
 
 # Function to update a reservation
-                def update_reservation():
-                    reservation_id = update_id_var.get()
-                    trip_type = trip_var.get()
-                    departure_date = departure_var.get()
-                    return_date = return_var.get()
-                    num_travelers = num_travelers_var.get()
-                    total_amount = 200.00 if trip_type == "one_way" else 300.00
-                    first_name = first_name_entry.get()
-                    last_name = last_name_entry.get()
-                    date_of_birth = dob_entry.get()
-                    payment_card_number = card_entry.get()
-                    reservation_status = "success"
-                    try:
-                        sql = "UPDATE reservations SET trip_type = %s, departure_date = %s, return_date = %s, num_travelers = %s, total_amount = %s, first_name = %s, last_name = %s, date_of_birth = %s, payment_card_number = %s, reservation_status = %s WHERE id = %s"
-                        values = (
-                        trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name,
+def update_reservation():
+    reservation_id = update_id_var.get()
+    trip_type = trip_var.get()
+    departure_date = departure_var.get()
+    return_date = return_var.get()
+    num_travelers = num_travelers_var.get()
+    total_amount = 200.00 if trip_type == "one_way" else 300.00
+    first_name = first_name_entry.get()
+    last_name = last_name_entry.get()
+    date_of_birth = dob_entry.get()
+    payment_card_number = card_entry.get()
+    reservation_status = "success"
+    try:
+        sql = "UPDATE reservations SET trip_type = %s, departure_date = %s, return_date = %s, num_travelers = %s, total_amount = %s, first_name = %s, last_name = %s, date_of_birth = %s, payment_card_number = %s, reservation_status = %s WHERE id = %s"
+        values = (trip_type, departure_date, return_date, num_travelers, total_amount, first_name, last_name,
                         date_of_birth, payment_card_number, reservation_status, reservation_id)
-                        cursor.execute(sql, values)
-                        conn.commit()
-                        messagebox.showinfo("Success", "Reservation updated successfully!")
-                    except Exception as e:
-                        messagebox.showerror("Error", str(e))
+        cursor.execute(sql, values)
+        conn.commit()
+        messagebox.showinfo("Success", "Reservation updated successfully!")
+    except Exception as e:
+        messagebox.showerror("Error", str(e))
 
                         # Function to display reservations in a table
                         def display_reservations():
