@@ -77,9 +77,14 @@ The function uses a try-except block to handle exceptions, such as errors during
 The method has developed that If the update is successful, a message box displays a success message and If the error occurs, an error message box shows the error message.
 The function uses the execute() method to execute the query and the commit() method to commit the changes to the database
 
-![Implemented graphical user interface](img.png)
+![Implemented graphical user interface](img_4.png)
 
 The above figure shows the graphical representation of the code which has been implemented in the pycharm with the help of a developed database. 
 The Tkinter library has been used to implement the graphical user interface. 
 There are several sections available in the GUI such as creating a reservation, delete a reservation, updating a reservation, showing a reservation, and deleting a reservation. 
 The create reservation has various text boxes to give details of the airline system to book the ticket.
+
+![Showing table on the database](img_5.png)
+
+The display reservation button shows the all information in the table which are presented in the dataset. 
+The above figure is showing a table representing the developed GUI by using Python as the front end and MySQL workbench as the backend.
