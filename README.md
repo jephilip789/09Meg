@@ -56,11 +56,12 @@ def create_reservation():
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-
-
-
-The above code is a Python function that inserts reservation details into a MySQL database using MySQL Workbench. The function retrieves values from various Tkinter widgets (such as trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type. It then constructs an SQL query with placeholders for the values to be inserted into the reservations table. The function uses a try-except block to handle exceptions, such as errors during the SQL execution. If the insertion is successful, a message box displays a success message. If an error occurs, an error message box shows the error message. The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
-
-
+The above code is a Python function that inserts reservation details into a MySQL database using MySQL Workbench. 
+The function retrieves values from various Tkinter widgets (such as trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type. 
+It then constructs an SQL query with placeholders for the values to be inserted into the reservations table. 
+The function uses a try-except block to handle exceptions, such as errors during the SQL execution. 
+If the insertion is successful, a message box displays a success message. 
+If an error occurs, an error message box shows the error message. 
+The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
 
 
