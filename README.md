@@ -68,7 +68,7 @@ If the insertion is successful, a message box displays a success message.
 If an error occurs, an error message box shows the error message. 
 The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
 
-![img_1.png](img_1.png)
+![Function to update a reservation](img_1.png)
 
 The above code has been implemented to get the proper formation of the database to the update reservation. 
 The function retrieves values from various Tkinter widgets (such as reservation_id, trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type.
@@ -77,3 +77,9 @@ The function uses a try-except block to handle exceptions, such as errors during
 The method has developed that If the update is successful, a message box displays a success message and If the error occurs, an error message box shows the error message.
 The function uses the execute() method to execute the query and the commit() method to commit the changes to the database
 
+![Implemented graphical user interface](img.png)
+
+The above figure shows the graphical representation of the code which has been implemented in the pycharm with the help of a developed database. 
+The Tkinter library has been used to implement the graphical user interface. 
+There are several sections available in the GUI such as creating a reservation, delete a reservation, updating a reservation, showing a reservation, and deleting a reservation. 
+The create reservation has various text boxes to give details of the airline system to book the ticket.
