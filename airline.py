@@ -132,7 +132,7 @@ display_text = Text(root, height=10, width=100)
 trip_label.grid(row=0, column=0, sticky=W)
 trip_combobox.grid(row=0, column=1)
 departure_label.grid(row=1, column=0, sticky = W)
-departure_entry.grid(row=1, column=1
+departure_entry.grid(row=1, column=1)
 return_label.grid(row=2, column=0, sticky=W)
 return_entry.grid(row=2, column=1)
 num_travelers_label.grid(row=3, column=0, sticky=W)
