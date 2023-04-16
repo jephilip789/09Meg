@@ -41,16 +41,16 @@ def create_reservation():
             return result
 
         # Function to delete a reservation
-        def delete_reservation():
-            reservation_id = delete_id_var.get()
-            try:
-                sql = "DELETE FROM reservations WHERE id = %s"
-                values = (reservation_id,)
-                cursor.execute(sql, values)
-                conn.commit(
-                messagebox.showinfo("Success", "Reservation deleted successfully!")
-            except Exception as e:
-                messagebox.showerror("Error", str(e))
+def delete_reservation():
+    reservation_id = delete_id_var.get()
+    try:
+        sql = "DELETE FROM reservations WHERE id = %s"
+        values = (reservation_id,)
+        cursor.execute(sql, values)
+        conn.commit(
+        messagebox.showinfo("Success", "Reservation deleted successfully!")
+    except Exception as e:
+        messagebox.showerror("Error", str(e))
 
                 # Function to update a reservation
                 def update_reservation():
