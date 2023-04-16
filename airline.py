@@ -6,7 +6,7 @@ from tkinter import messagebox
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="2121",
+    password="12345",
     database="smj_airline_reservation"
 )
 cursor = conn.cursor()
