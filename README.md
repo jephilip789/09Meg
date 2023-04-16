@@ -94,6 +94,8 @@ The above figure is showing a table representing the developed GUI by using Pyth
 The above display shows the one way booking successfully created with the required parameters.
 The deletion of the booking can also be done on the GUL window.
 
+![Deletion of the booking](img_5.png)
+
 Conclusion:
 In conclusion, the SMJ Airline reservation system is a comprehensive solution that allows users to book airline tickets online through a user-friendly interface.
 The system offers features such as selecting trip types, specifying departure and return dates, entering personal information, calculating total costs, and making online payments. 
