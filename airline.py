@@ -120,27 +120,26 @@ delete_id_entry = Entry(root, textvariable=delete_id_var)
 update_id_var = IntVar()
 update_id_entry = Entry(root, textvariable=update_id_var)
 
-                                # Create buttons
-                                create_button = Button(root, text="Create Reservation", command=create_reservation)
-                                read_button = Button(root, text="Display Reservations", command=display_reservations)
-                                delete_button = Button(root, text="Delete Reservation", command=delete_reservation)
-                                update_button = Button(root, text="Update Reservation", command=update_reservation)
+# Create buttons
+create_button = Button(root, text="Create Reservation", command=create_reservation)
+read_button = Button(root, text="Display Reservations", command=display_reservations)
+delete_button = Button(root, text="Delete Reservation", command=delete_reservation)
+update_button = Button(root, text="Update Reservation", command=update_reservation)
 
-                                # Create text box to display reservations
-                                display_text = Text(root, height=10, width=100)
-                                # Grid layout for GUI elements
-                                trip_label.grid(row=0, column=0, sticky=W)
-                                trip_combobox.grid(row=0, column=1)
-                                departure_label.grid(row=1, column=0
-                                sticky = W)
-                                departure_entry.grid(row=1, column=1
-                                return_label.grid(row=2, column=0, sticky=W)
-                                return_entry.grid(row=2, column=1)
-                                num_travelers_label.grid(row=3, column=0, sticky=W)
-                                num_travelers_entry.grid(row=3, column=1)
-                                first_name_label.grid(row=4, column=0, sticky=W)
-                                first_name_entry.grid(row=4, column=1)
-                                last_name_label.grid(row=5, column=0, sticky=W
+# Create text box to display reservations
+display_text = Text(root, height=10, width=100)
+# Grid layout for GUI elements
+trip_label.grid(row=0, column=0, sticky=W)
+trip_combobox.grid(row=0, column=1)
+departure_label.grid(row=1, column=0
+sticky = W)
+departure_entry.grid(row=1, column=1
+return_label.grid(row=2, column=0, sticky=W)
+return_entry.grid(row=2, column=1)
+num_travelers_label.grid(row=3, column=0, sticky=W)
+first_name_label.grid(row=4, column=0, sticky=W)
+first_name_entry.grid(row=4, column=1)
+last_name_label.grid(row=5, column=0, sticky=W
                                 last_name_entry.grid(row=5, column=1)
                                 dob_label.grid(row=6, column=0, sticky=W)
                                 dob_entry.grid(row=6, column=1)
