@@ -89,7 +89,7 @@ The create reservation has various text boxes to give details of the airline sys
 The display reservation button shows the all information in the table which are presented in the dataset. 
 The above figure is showing a table representing the developed GUI by using Python as the front end and MySQL workbench as the backend.
 
-![One Way Booking](img_4.png)
+![One way booking](img_4.png)
 
 The above display shows the one way booking successfully created with the required parameters.
 The deletion of the booking can also be done on the GUL window.
