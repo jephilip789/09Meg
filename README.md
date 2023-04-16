@@ -68,4 +68,12 @@ If the insertion is successful, a message box displays a success message.
 If an error occurs, an error message box shows the error message. 
 The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
 
+![img_1.png](img_1.png)
+
+The above code has been implemented to get the proper formation of the database to the update reservation. 
+The function retrieves values from various Tkinter widgets (such as reservation_id, trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type.
+It then constructs an SQL query with placeholders for the values to be updated in the reservations table, with the reservation_id as the condition for updating.
+The function uses a try-except block to handle exceptions, such as errors during the SQL execution. 
+The method has developed that If the update is successful, a message box displays a success message and If the error occurs, an error message box shows the error message.
+The function uses the execute() method to execute the query and the commit() method to commit the changes to the database
 
