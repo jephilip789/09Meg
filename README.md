@@ -1,5 +1,6 @@
 Git link: git@github.com:09Meg/09Meg.git
-Introduction
+
+Introduction:
 Online booking for airline tickets has been made possible through the SMJ Airline reservation system. The system offers a user-friendly interface that enables users to select their trip type (one-way or return), pick departure and return dates, specify the number of travelers, and calculate the total cost based on that number. Together with entering personal data like their first and last names and dates of birth, users can also make payments online with a credit or debit card. The system also stores all of the data entered by users in a MySQL database for the purpose of maintaining records and generating reports. For managing reservation data, the system offers the fundamental CRUD (Create, Read, Update, and Delete) functions of data entry, data retrieval, data update, and data deletion. In order to guarantee data accuracy and consistency, the system additionally includes validation and integrity checks. Overall, the SMJ Airline reservation system strives to offer users a simple and quick way to purchase airline tickets online while upholding the confidentiality and integrity of their personal information.
 
 // CREATE DATABASE smj_airline_reservstion; //
