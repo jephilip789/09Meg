@@ -138,7 +138,7 @@ return_entry.grid(row=2, column=1)
 num_travelers_label.grid(row=3, column=0, sticky=W)
 first_name_label.grid(row=4, column=0, sticky=W)
 first_name_entry.grid(row=4, column=1)
-last_name_label.grid(row=5, column=0, sticky=W
+last_name_label.grid(row=5, column=0, sticky=W)
 last_name_entry.grid(row=5, column=1)
 dob_label.grid(row=6, column=0, sticky=W)
 dob_entry.grid(row=6, column=1)
