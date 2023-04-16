@@ -10,6 +10,7 @@ conn = mysql.connector.connect(
     database="smj_airline_reservation"
 )
 cursor = conn.cursor()
+
 # Function to create a new reservation
 def create_reservation():
     trip_type = trip_var.get()

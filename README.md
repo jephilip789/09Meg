@@ -19,7 +19,8 @@ CREATE TABLE `reservations` (
   `payment_card_number` varchar(16) DEFAULT NULL,
   `reservation_status` enum('success','pending','failed') 
 
-The above code represents an SQL query to create a table named “reservations” in a MySQL database. The table has several columns, including “id” which is an auto-incrementing primary key, “trip_type” which has “one_way” or “return”, values. “departure_date” and “return_date” which are of DATE data type. Besides this, all the entity has been created have unique IDs on the database.
+The above code represents an SQL query to create a table named “reservations” in a MySQL database. 
+The table has several columns, including “id” which is an auto-incrementing primary key, “trip_type” which has “one_way” or “return”, values. “departure_date” and “return_date” which are of DATE data type. Besides this, all the entity has been created have unique IDs on the database.
 
 Frontend Implementation (GUI)
 
@@ -31,7 +32,10 @@ conn = mysql.connector.connect(
 )
 cursor = conn.cursor()
 
-The  code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). A cursor object is created to interact with the database. Proper exception handling and closing of the database connection are important for secure and efficient database operations.
+The  code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. 
+The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). 
+A cursor object is created to interact with the database. 
+Proper exception handling and closing of the database connection are important for secure and efficient database operations.
 
 def create_reservation():
     trip_type = trip_var.get()
@@ -56,11 +60,20 @@ def create_reservation():
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
+The above code is a Python function that inserts reservation details into a MySQL database using MySQL Workbench. 
+The function retrieves values from various Tkinter widgets (such as trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type. 
+It then constructs an SQL query with placeholders for the values to be inserted into the reservations table. 
+The function uses a try-except block to handle exceptions, such as errors during the SQL execution. 
+If the insertion is successful, a message box displays a success message. 
+If an error occurs, an error message box shows the error message. 
+The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
 
+![img_1.png](img_1.png)
 
-
-The above code is a Python function that inserts reservation details into a MySQL database using MySQL Workbench. The function retrieves values from various Tkinter widgets (such as trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type. It then constructs an SQL query with placeholders for the values to be inserted into the reservations table. The function uses a try-except block to handle exceptions, such as errors during the SQL execution. If the insertion is successful, a message box displays a success message. If an error occurs, an error message box shows the error message. The function uses the execute() method to execute the query and the commit() method to commit the changes to the database.
-
-
-
+The above code has been implemented to get the proper formation of the database to the update reservation. 
+The function retrieves values from various Tkinter widgets (such as reservation_id, trip_type, departure_date, return_date, etc.) and calculates the total_amount based on the trip_type.
+It then constructs an SQL query with placeholders for the values to be updated in the reservations table, with the reservation_id as the condition for updating.
+The function uses a try-except block to handle exceptions, such as errors during the SQL execution. 
+The method has developed that If the update is successful, a message box displays a success message and If the error occurs, an error message box shows the error message.
+The function uses the execute() method to execute the query and the commit() method to commit the changes to the database
 
