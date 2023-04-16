@@ -84,7 +84,7 @@ The Tkinter library has been used to implement the graphical user interface.
 There are several sections available in the GUI such as creating a reservation, delete a reservation, updating a reservation, showing a reservation, and deleting a reservation. 
 The create reservation has various text boxes to give details of the airline system to book the ticket.
 
-![Showing table on the database](img_3.png)
+![Showing table on the database](img_1.png)
 
 The display reservation button shows the all information in the table which are presented in the dataset. 
 The above figure is showing a table representing the developed GUI by using Python as the front end and MySQL workbench as the backend.
