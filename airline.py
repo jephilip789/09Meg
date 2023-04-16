@@ -90,19 +90,19 @@ def display_reservations():
 root = Tk()
 root.title("Airline Reservation System")
 
-                                # Create labels
-                                trip_label = Label(root, text="Trip Type:")
-                                departure_label = Label(root, text="Departure Date:")
-                                return_label = Label(root, text="Return Date:")
-                                num_travelers_label = Label(root, text="Number of Travelers:")
-                                first_name_label = Label(root, text="First Name:")
-                                last_name_label = Label(root, text="Last Name:")
-                                dob_label = Label(root, text="Date of Birth:")
-                                card_label = Label(root, text="Payment Card Number:")
-                                delete_id_label = Label(root, text="Reservation ID for Deletion:")
-                                update_id_label = Label(root, text="Reservation ID for Update:")
+# Create labels
+trip_label = Label(root, text="Trip Type:")
+departure_label = Label(root, text="Departure Date:")
+return_label = Label(root, text="Return Date:")
+num_travelers_label = Label(root, text="Number of Travelers:")
+first_name_label = Label(root, text="First Name:")
+last_name_label = Label(root, text="Last Name:")
+dob_label = Label(root, text="Date of Birth:")
+card_label = Label(root, text="Payment Card Number:")
+delete_id_label = Label(root, text="Reservation ID for Deletion:")
+update_id_label = Label(root, text="Reservation ID for Update:")
 
-                                # Create entry fields
+        # Create entry fields
                                 trip_var = StringVar()
                                 trip_combobox = Combobox(root, textvariable=trip_var, values=["one_way", "round_trip"])
                                 departure_var = StringVar()
