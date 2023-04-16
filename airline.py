@@ -34,25 +34,25 @@ def create_reservation():
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-        # Function to read reservations
-        def read_reservations():
-            cursor.execute("SELECT * FROM reservations")
-            result = cursor.fetchall()
-            return result
+# Function to read reservations
+def read_reservations():
+    cursor.execute("SELECT * FROM reservations")
+    result = cursor.fetchall()
+    return result
 
-        # Function to delete a reservation
+# Function to delete a reservation
 def delete_reservation():
     reservation_id = delete_id_var.get()
     try:
         sql = "DELETE FROM reservations WHERE id = %s"
         values = (reservation_id,)
         cursor.execute(sql, values)
-        conn.commit(
+        conn.commit()
         messagebox.showinfo("Success", "Reservation deleted successfully!")
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-                # Function to update a reservation
+# Function to update a reservation
                 def update_reservation():
                     reservation_id = update_id_var.get()
                     trip_type = trip_var.get()
