@@ -19,7 +19,8 @@ CREATE TABLE `reservations` (
   `payment_card_number` varchar(16) DEFAULT NULL,
   `reservation_status` enum('success','pending','failed') 
 
-The above code represents an SQL query to create a table named “reservations” in a MySQL database. The table has several columns, including “id” which is an auto-incrementing primary key, “trip_type” which has “one_way” or “return”, values. “departure_date” and “return_date” which are of DATE data type. Besides this, all the entity has been created have unique IDs on the database.
+The above code represents an SQL query to create a table named “reservations” in a MySQL database. 
+The table has several columns, including “id” which is an auto-incrementing primary key, “trip_type” which has “one_way” or “return”, values. “departure_date” and “return_date” which are of DATE data type. Besides this, all the entity has been created have unique IDs on the database.
 
 Frontend Implementation (GUI)
 
@@ -31,7 +32,10 @@ conn = mysql.connector.connect(
 )
 cursor = conn.cursor()
 
-The  code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). A cursor object is created to interact with the database. Proper exception handling and closing of the database connection are important for secure and efficient database operations.
+The  code snippet obtained from MySQL Workbench. It shows how to connect to a MySQL database using Python's MySQL.connector module. 
+The code establishes a connection to the database by specifying the host (localhost), the user (root), the password (sunshine), and the database name (smj_airline_reservation). 
+A cursor object is created to interact with the database. 
+Proper exception handling and closing of the database connection are important for secure and efficient database operations.
 
 def create_reservation():
     trip_type = trip_var.get()
