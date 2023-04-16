@@ -147,7 +147,7 @@ card_entry.grid(row=7, column=1)
 create_button.grid(row=8, column=0, columnspan=2)
 delete_id_label.grid(row=9, column=0, sticky=W)
 delete_id_entry.grid(row=9, column=1)
-delete_button.grid(row=10, column=0, columnspan=2
+delete_button.grid(row=10, column=0, columnspan=2)
 update_id_label.grid(row=11, column=0, sticky=W)
 update_id_entry.grid(row=11, column=1)
 update_button.grid(row=12, column=0, columnspan=2)
