@@ -6,7 +6,7 @@ from tkinter import messagebox
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="12345",
+    password="2121",
     database="smj_airline_reservation"
 )
 cursor = conn.cursor()
@@ -14,7 +14,7 @@ cursor = conn.cursor()
 def create_reservation():
     trip_type = trip_var.get()
     departure_date = departure_var.get()
-    return_date = return_var.get()
+    return_date = return_var.get() if trip_type == "return" else None
     num_travelers = num_travelers_var.get()
     total_amount = 200.00 if trip_type == "one_way" else 300.00
     first_name = first_name_entry.get()
