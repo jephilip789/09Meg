@@ -152,7 +152,7 @@ update_id_label.grid(row=11, column=0, sticky=W)
 update_id_entry.grid(row=11, column=1)
 update_button.grid(row=12, column=0, columnspan=2)
 read_button.grid(row=13, column=0, columnspan=2)
-display_text.grid(row=14, column=0, columnspan=2
+display_text.grid(row=14, column=0, columnspan=2)
 
 root.mainloop()
 
